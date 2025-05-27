@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbeae9;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e3effc;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    gap: 32px;
+    width: 400px;
+    display: none;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 250px;
+}
+
+.information p {
+    color: #475367;
+}
+
+.information p span {
+    color: #4e46e5;
+    word-wrap: break-word;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.image-wrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+.hire-me {
+    border: none;
+    color: white;
+    background-color: #4e46e5;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#idForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-container label {
+    font-weight: 500;
+}
+
+#idForm input,
+#idForm button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#idForm input {
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+#idForm input::placeholder{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#idForm input:focus {
+    outline: none;
+}
+
+#idForm button {
+    color: white;
+    background-color: #4e46e5;
+    border: 1px solid #4e46e5;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 16px;
+        height: 100vh;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .information {
+        width: 190px;
+    }
+
+    #idForm {
+        width: 80%;
+    }
+}
